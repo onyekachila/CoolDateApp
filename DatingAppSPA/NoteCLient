@@ -1,0 +1,11 @@
+download vscode
+
+
+// how to install vscode extension manually
+angular2-switcher // install for vs code
+bracket pair colorizer
+tslint
+path intellisense   
+
+
+npm install bootstrap font-awesome

@@ -1,0 +1,26 @@
+
+// for sqlite
+services.AddDbContext<DataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+
+// for sql server
+services.AddDbContext<DataContext>(options =>
+    eoptions.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+dotnet ef migrations add InitialCreate
+
+dotnet ef database update
+
+dotnet run watch
+
+JWT
+
+// Jason Web Token
+JWT - This is a three way structured algorithm which contains the header, payload and secret
+So the client sends the header and payload without needing to know the secret. The secret 
+is stored on the server 
+Clients send token to the server and the server uses  the secret to validate it. 
+
+
+
+
+
